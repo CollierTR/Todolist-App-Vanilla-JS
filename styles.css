@@ -8,6 +8,10 @@ html, body {
     color: #f7f7ff;
 }
 
+.text-light {
+    color: #f7f7ff;
+}
+
 .text-dark {
     color: #000000;
 }
@@ -16,11 +20,14 @@ html, body {
     color: #272727;
 }
 
-bg.primary {
+.bg.primary {
     color: #eb5e55;
 }
 
-bg.secondary {
+.bg.secondary {
     color: #7a918d;
 }
 
+heading {
+    display: flex;
+}
