@@ -22,5 +22,5 @@ let taskArr = [
 const taskList = document.getElementById('taskList')
 
 for (task in taskArr) {
-    taskList.innerHTML += task.name
+    taskList.innerHTML += '<p>task is rendering</p>'
 }
