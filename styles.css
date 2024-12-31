@@ -8,15 +8,19 @@ html, body {
     color: #f7f7ff;
 }
 
+.text-dark {
+    color: #000000;
+}
+
 .bg-dark {
     color: #272727;
 }
 
 bg.primary {
-    color: #eb5e55
+    color: #eb5e55;
 }
 
 bg.secondary {
-    color: #7a918d
+    color: #7a918d;
 }
 
