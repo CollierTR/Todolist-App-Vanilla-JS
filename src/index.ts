@@ -22,6 +22,6 @@ let taskArr = [
 const taskList = document.getElementById('taskList')
 
 
-taskArr.forEach((task) => {
+taskList && taskArr.forEach((task) => {
     taskList.innerHTML += `<div class="taskItem"><p>${task.name}</p></div>`
-})
+}) 
