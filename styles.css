@@ -33,3 +33,7 @@ html, body {
     flex-direction: row;
 }
 
+.fa-solid fa-bars {
+    color: black;
+}
+
