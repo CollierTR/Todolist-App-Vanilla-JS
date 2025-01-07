@@ -9,7 +9,7 @@ let taskArr = [
         completed: false,
     },
     {
-        name: "Clean Toliet",
+        name: "Clean the Toliet",
         completed: false,
     },
     {
@@ -17,7 +17,6 @@ let taskArr = [
         completed: false,
     },
 ]
-
 
 const taskList = document.getElementById('taskList')
 

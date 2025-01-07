@@ -9,7 +9,7 @@ let taskArr = [
         completed: false,
     },
     {
-        name: "Clean Toliet",
+        name: "Clean the Toliet",
         completed: false,
     },
     {
@@ -17,6 +17,8 @@ let taskArr = [
         completed: false,
     },
 ];
+let one = 1;
+console.log(one);
 const taskList = document.getElementById('taskList');
 taskList && taskArr.forEach((task) => {
     taskList.innerHTML += `<div class="taskItem"><p>${task.name}</p></div>`;
