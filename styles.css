@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html, body {
     box-sizing: border-box;
     margin: 0;
@@ -37,21 +39,19 @@ html, body {
     margin-right: 15px;
 }
 
-.fa-solid fa-bars {
-    color: black;
-}
-
 header {
     background-color: #eb5e55;
-}
-
-.fa {
-    font-size: ;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
     color: #f7f7ff;
     background-color: #272727;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .taskItem {
