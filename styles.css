@@ -30,28 +30,31 @@ html, body {
 
 .flex-container {
     display: flex;
-    flex-direction: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .fa-solid fa-bars {
     color: black;
 }
 
-.taskItem {
-
-}
-
 header {
     background-color: #eb5e55;
 }
 
-h2 {
-    color: #7a918d;
+.fa {
+    font-size: ;
 }
-
 
 body {
     color: #f7f7ff;
     background-color: #272727;
+}
+
+.taskItem {
+    background-color: #eb5e55;
 }
 
