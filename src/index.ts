@@ -1,3 +1,6 @@
+import TodoList from "./classes/ToDoList"
+
+// Define a 'starting' array. Replace this later with an array from local storage.
 let taskArr = [
     {
         id: 1,
@@ -16,42 +19,21 @@ let taskArr = [
     },
     {
         id: 4,
-        title: "Walk the Dog",
+        title: "feed the Dog",
         completed: false,
     },
 ]
 
-
-class TodoList {
-
-    private todoArray: {id: number, title: string, completed: boolean}[]
-
-    public constructor(array: {id: number, title: string, completed: boolean}[]) {
-        this.todoArray = array;
-    }
-
-    public returnNewId(): number {
-        const maxId = this.todoArray.reduce((max, task) => Math.max(max, task.id), 0);
-        return maxId + 1;
-    }
-
-    public addTask(title: string = "Task") {
-        const newTask = {
-            id: this.returnNewId(),
-            title: title,
-            completed: false,
-        };
-        this.todoArray.push(newTask);
-    }
-
-}
-
-const mainTodoList = new TodoList(taskArr)
-
-
+// Grab Dom elements
 const taskList = document.getElementById('taskList')
 
 
-taskList && taskArr.forEach((task) => {
+// Initalize a new todolist and give it a 'starting' array
+const mainTodoList = new TodoList(taskArr)
+
+
+
+
+taskList && mainTodoList.returnTasks().forEach((task) => {
     taskList.innerHTML += `<div class="taskItem"><p>${task.title}</p></div>`
 }) 
