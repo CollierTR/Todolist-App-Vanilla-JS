@@ -1,4 +1,26 @@
-import TodoList from "./classes/ToDoList";
+"use strict";
+// import TodoList from "./classes/ToDoList"
+// const ToDoList = require('./classes/ToDoList')
+class TodoList {
+    constructor(array) {
+        this.todoArray = array;
+    }
+    returnTasks() {
+        return this.todoArray;
+    }
+    returnNewId() {
+        const maxId = this.todoArray.reduce((max, task) => Math.max(max, task.id), 0);
+        return maxId + 1;
+    }
+    addTask(title = "Task") {
+        const newTask = {
+            id: this.returnNewId(),
+            title: title,
+            completed: false,
+        };
+        this.todoArray.push(newTask);
+    }
+}
 // Define a 'starting' array. Replace this later with an array from local storage.
 let taskArr = [
     {
