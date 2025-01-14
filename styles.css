@@ -30,10 +30,24 @@ html, body {
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: nowrap;
 }
 
 .fa-solid fa-bars {
     color: black;
+}
+
+header {
+    background-color: #eb5e55;
+}
+
+h2 {
+    color: #7a918d;
+}
+
+
+body {
+    color: #f7f7ff;
+    background-color: #272727;
 }
 
